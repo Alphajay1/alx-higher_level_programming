@@ -21,7 +21,7 @@
 
 - Without importing modules or using len().
 
-- 1-safe_print_integer.py: Python function that prints an integer in "{:d}".format() format.
+## 1-safe_print_integer.py: Python function that prints an integer in "{:d}".format() format.
 
 - The parameter value can be any type.
 
@@ -29,7 +29,7 @@
 
 - Without importing modules or using type().
 
-- 2-safe_print_list_integers.py: Python function that prints the first x elements of a list that are integers on the same line, followed by a new line.
+## 2-safe_print_list_integers.py: Python function that prints the first x elements of a list that are integers on the same line, followed by a new line.
 
 - The parameter my_list can contain any type.
 
@@ -39,7 +39,7 @@
 
 -Without importing modules or using len().
 
-- 3-safe_print_division.py: Python function that divides two integers and prints the result using finally:.
+## 3-safe_print_division.py: Python function that divides two integers and prints the result using finally:.
 
 - The function assumes that the arguments are integers.
 
@@ -47,7 +47,7 @@
 
 - Without importing modules.
 
-- 4-list_division.py: Python function that divides two lists element by element.
+## 4-list_division.py: Python function that divides two lists element by element.
 
 - Returns a new list of length list_length with all divisions.
 
@@ -63,15 +63,15 @@
 
 - Without importing modules.
 
-- 5-raise_exception.py: Python function that raises a type exception.
+## 5-raise_exception.py: Python function that raises a type exception.
 
 - Without importing modules.
 
-- 6-raise_exception_msg.py: Python function that raises a name exception with a message.
+## -raise_exception_msg.py: Python function that raises a name exception with a message.
 
 - Without importing modules.
 
-- 100-safe_print_integer_err.py: Python function that prints an integer with type-checking in "{:d}".format()) format.
+## 100-safe_print_integer_err.py: Python function that prints an integer with type-checking in "{:d}".format()) format.
 
 - The paramter value can be any type.
 
@@ -81,7 +81,7 @@
 
 - Without importing modules.
 
-- 101-safe_function.py: Python function that executes a function safely.
+## 101-safe_function.py: Python function that executes a function safely.
 
 - The function assumes that the paramter fct is always a pointer to a function.
 
@@ -89,6 +89,6 @@
 
 - Otherwise, prints an en exception error to stderr and returns None.
 
-- 102-magic_calculation.py: Python function matching exactly a bytecode provided by Holberton School.
+## 102-magic_calculation.py: Python function matching exactly a bytecode provided by Holberton School.
 
-- 103-python.c: C functions that print basic information about Python lists, bytes, and float objects.
+## 103-python.c: C functions that print basic information about Python lists, bytes, and float objects.
