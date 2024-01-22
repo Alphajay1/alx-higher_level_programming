@@ -67,7 +67,7 @@
 
 - Without importing modules.
 
-## -raise_exception_msg.py: Python function that raises a name exception with a message.
+## 6-raise_exception_msg.py: Python function that raises a name exception with a message.
 
 - Without importing modules.
 
