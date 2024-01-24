@@ -1,5 +1,5 @@
 #!/usr/bin/pythom3
-"""Defines a class Square based on 2-square.py"""
+"""Defines a class Square"""
 
 
 class Square:
@@ -9,7 +9,7 @@ class Square:
         __size(int): size of one side of a square
     """
     def __init__(self, size=0):
-        """Initialize the square
+        """Initializes the square
 
         Args:
             size(int): size of one side of the square
@@ -25,13 +25,11 @@ class Square:
                 raise ValueError("size must be >= 0")
             else:
                 self.__size = size
+
     def area(self):
         """Calculates the square's area
         
-        Args:
-            size(int): size of one side of the square
-
         Returns:
             area(int): size(int) * size(int)
         """
-        return ((self.__size) ** 2)
+        return (self.__size) ** 2
