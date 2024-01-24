@@ -17,19 +17,25 @@ class Square:
         Returns:
             None
         """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
+        try:
 
-        else:
-            if size < 0:
-                raise ValueError("size must be >= 0")
+            if type(size) is not int:
+                raise TypeError("size must be an integer")
+
             else:
-                self.__size = size
+
+                if size < 0:
+                    raise ValueError("size must be >= 0")
+
+        except (TypeError, ValueError):
+
+            raise
+        self.__size = size
 
     def area(self):
         """Calculates the square's area
         
         Returns:
-            area(int): size(int) * size(int)
+            The area of the square
         """
         return (self.__size) ** 2
