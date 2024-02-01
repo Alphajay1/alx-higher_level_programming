@@ -2,7 +2,7 @@
 """
 This is "5-text_indentation" module.
 
-The 5-text_indentation module supplies one function, text_indentation.
+The 5-text_indentation module supplies one function, text_indentation(text).
 """
 
 
