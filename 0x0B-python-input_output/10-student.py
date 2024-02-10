@@ -7,7 +7,6 @@ contains a class "Student"
 class Student:
     """Represents a student"""
 
-
     def __init__(self, first_name, last_name, age):
         """Initializes a new student
 
@@ -22,9 +21,14 @@ class Student:
 
     def to_json(self, attrs=None):
         """retrieves a dictionary representation of a Student instance
+
         If attrs is a list of strings, only attribute names contained
         in this list must be retrieved
+
         Otherwise, all attributes must be retrieved
+
+        Args:
+            attrs (list): (Optional) The attributes to represent.
         """
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
