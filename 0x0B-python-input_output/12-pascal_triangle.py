@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defines a pascal's triangle function"""
+
+
 def pascal_triangle(n):
     """returns a pascal's triangle of a list of lists of integers
 
@@ -12,7 +15,6 @@ def pascal_triangle(n):
         return []
 
     triangles = [[1]]
-
     while len(triangles) != n:
         p_tri = triangles[-1]
         temp = [1]
