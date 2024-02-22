@@ -7,7 +7,7 @@ Contains the class BaseGeometry and subclass Rectangle
 class BaseGeometry:
     """A class with public instance methods area and integer_validator"""
     def area(self):
-        """raises an exception when called"""
+        """raises an exception"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
@@ -21,7 +21,7 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """A representation of a rectangle"""
     def __init__(self, width, height):
-        """instantiation of the rectangle"""
+        """Initializes the rectangle"""
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
@@ -32,5 +32,5 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        """informal string representation of the rectangle"""
+        """Returns an informal string representation of the rectangle"""
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
