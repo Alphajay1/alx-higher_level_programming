@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Defines class BaseGeometry
+Contains class BaseGeometry and subclass Rectangle
 """
 
 
@@ -18,9 +18,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """
-    inherits from BaseGeometry
-    """
+    """A representation of a Rectangle"""
     def __init__(self, width, height):
         """Initializes the Rectangle"""
         self.__width = self.integer_validator("width", width)
