@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-It contains the class BaseGeometry and subclass Rectangle
+Contains the class BaseGeometry and subclass Rectangle
 """
 
 
@@ -11,16 +11,17 @@ class BaseGeometry:
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """It validates that value is an integer greater than 0"""
+        """validates that value is an integer greater than 0"""
         if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """A representation of a rectangle"""
     def __init__(self, width, height):
-        """instantiation of the rectangle"""
+        """Initializes a rectangle"""
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
